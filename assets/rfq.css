@@ -1,0 +1,48 @@
+/* RFQ modal + WhatsApp float — shared by all schemes */
+.rfq-modal{position:fixed;inset:0;z-index:9999;display:none;align-items:center;justify-content:center;padding:20px}
+.rfq-modal.show{display:flex}
+.rfq-overlay{position:absolute;inset:0;background:rgba(0,0,0,.72)}
+.rfq-card{position:relative;z-index:1;width:100%;max-width:520px;max-height:92vh;overflow-y:auto;background:#fff;color:#222;padding:38px 40px 40px;border-radius:2px;font-family:Arial,Helvetica,sans-serif}
+.rfq-close{position:absolute;top:14px;right:18px;background:none;border:none;font-size:26px;line-height:1;cursor:pointer;color:#666}
+.rfq-card h3{font-size:24px;margin:0 0 6px;font-weight:500}
+.rfq-pre{font-size:13px;color:#a07d3c;margin:0 0 20px}
+.rfq-card p.rfq-sub{font-size:13px;color:#777;margin:0 0 22px;line-height:1.6}
+.rfq-form label{display:block;font-size:12px;letter-spacing:.5px;color:#555;margin:0 0 6px}
+.rfq-form input,.rfq-form select,.rfq-form textarea{width:100%;box-sizing:border-box;padding:11px 12px;margin:0 0 16px;border:1px solid #d5d5d5;border-radius:2px;font-size:14px;font-family:inherit;background:#fff;color:#222}
+.rfq-form textarea{min-height:92px;resize:vertical}
+.rfq-form button{width:100%;padding:14px;background:#1c1c1c;color:#fff;border:none;font-size:13px;letter-spacing:2px;cursor:pointer}
+.rfq-form button:hover{background:#a07d3c}
+.rfq-done{display:none;text-align:center;padding:30px 10px}
+.rfq-done .tick{font-size:40px;color:#a07d3c;margin-bottom:10px}
+.rfq-done h4{font-size:20px;font-weight:500;margin:0 0 8px}
+.rfq-done p{font-size:13px;color:#777;line-height:1.6}
+.wa-float{position:fixed;right:22px;bottom:22px;z-index:500;height:54px;padding:0 15px;border-radius:27px;background:#25D366;display:flex;align-items:center;justify-content:center;gap:0;box-shadow:0 6px 22px rgba(37,211,102,.38),0 2px 6px rgba(0,0,0,.18);text-decoration:none;transition:box-shadow .25s ease,transform .25s ease}
+.wa-float:hover{transform:translateY(-3px);box-shadow:0 10px 28px rgba(37,211,102,.5),0 3px 8px rgba(0,0,0,.22)}
+.wa-float svg{width:27px;height:27px;fill:#fff;flex:none;transition:transform .25s ease}
+.wa-float:hover svg{transform:scale(1.06)}
+.wa-float .wa-label{max-width:0;opacity:0;overflow:hidden;white-space:nowrap;color:#fff;font:600 13px/1 Arial,Helvetica,sans-serif;letter-spacing:.4px;transition:max-width .3s ease,opacity .25s ease,margin .3s ease}
+.wa-float:hover .wa-label,.wa-float:focus-visible .wa-label{max-width:110px;opacity:1;margin-left:9px}
+.wa-float::after{content:"";position:absolute;inset:-6px;border-radius:33px;border:2px solid rgba(37,211,102,.55);animation:waPulse 2.8s ease-out infinite;pointer-events:none}
+@keyframes waPulse{0%{transform:scale(.92);opacity:.7}70%,100%{transform:scale(1.18);opacity:0}}
+/* Mobile sticky quote bar — injected by common.js */
+.mobile-quote-bar{display:none;position:fixed;left:0;right:0;bottom:0;z-index:800;align-items:center;gap:12px;padding:10px 16px;background:#fff;border-top:1px solid #e5e0d5;box-shadow:0 -4px 18px rgba(0,0,0,.12);font-family:Arial,Helvetica,sans-serif}
+.mobile-quote-bar .mqb-txt{flex:1;line-height:1.25}
+.mobile-quote-bar .mqb-txt b{display:block;font-size:12px;letter-spacing:1px;color:#222}
+.mobile-quote-bar .mqb-txt span{font-size:10px;color:#888}
+.mobile-quote-bar .mqb-wa{width:40px;height:40px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;text-decoration:none;flex-shrink:0}
+.mobile-quote-bar .mqb-wa svg{width:22px;height:22px;fill:#fff}
+.mobile-quote-bar .mqb-cta{border:none;background:#b08d4f;color:#fff;padding:12px 18px;font-size:11px;letter-spacing:1px;text-transform:uppercase;cursor:pointer;flex-shrink:0}
+@media(max-width:900px){
+  .mobile-quote-bar{display:flex}
+  .wa-float{display:none}
+  body{padding-bottom:62px}
+  .rfq-card{padding:28px 22px 32px}
+  .rfq-form input,.rfq-form select,.rfq-form textarea{font-size:16px}
+  .rfq-modal{align-items:flex-end;padding:0}
+  .rfq-card{max-width:none;max-height:88vh;border-radius:12px 12px 0 0}
+}
+@media(prefers-reduced-motion:reduce){
+  .wa-float::after{animation:none;display:none}
+  .wa-float,.wa-float svg,.wa-float .wa-label{transition:none}
+}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
