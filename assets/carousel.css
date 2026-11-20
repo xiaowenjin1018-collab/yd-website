@@ -1,0 +1,63 @@
+/* ============================================================
+   Cabinet Collection Carousel — shared component
+   还原原站「纯粹优雅的内阁」自动轮播板块，用新设计语言重做
+   依赖宿主方案定义 --cw-bg/--cw-ink/--cw-gold/--cw-line/--cw-muted
+   ============================================================ */
+
+.car-head{margin-bottom:44px}
+.car-kicker{display:inline-block;font-size:11px;letter-spacing:3.5px;color:var(--cw-gold);margin-bottom:16px;text-transform:uppercase}
+.car-head h2{font-size:clamp(28px,3.4vw,46px);line-height:1.15;margin:0;font-weight:400;letter-spacing:-.5px}
+.car-head p{color:var(--cw-muted);margin:14px 0 0;font-size:15px;max-width:560px;line-height:1.7}
+
+.car-layout{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:start}
+
+/* ---- 轮播舞台 ---- */
+.car-stage{position:relative;overflow:hidden;background:var(--cw-bg);border:1px solid var(--cw-line);aspect-ratio:4/3}
+.car-track{position:absolute;inset:0}
+.car-slide{position:absolute;inset:0;margin:0;opacity:0;transition:opacity .9s ease;pointer-events:none}
+.car-slide.active{opacity:1;pointer-events:auto}
+.car-slide img{width:100%;height:100%;object-fit:cover;display:block;transform:scale(1.04)}
+.car-slide.active img{animation:carKen 6.5s ease-out forwards}
+@keyframes carKen{from{transform:scale(1.04)}to{transform:scale(1.12) translateX(-1%)}}
+.car-slide figcaption{position:absolute;left:0;bottom:0;right:0;padding:40px 28px 24px;background:linear-gradient(to top,rgba(0,0,0,.68),transparent);color:#fff;font-size:12px;letter-spacing:2px;text-transform:uppercase;opacity:0;transform:translateY(8px);transition:.6s ease}
+.car-slide.active figcaption{opacity:1;transform:none}
+
+/* 圆点指示器 */
+.car-dots{position:absolute;left:50%;bottom:20px;transform:translateX(-50%);display:flex;gap:10px;z-index:5}
+.car-dot{width:8px;height:8px;border-radius:50%;border:1px solid rgba(255,255,255,.8);background:transparent;cursor:pointer;padding:0;transition:.3s ease;box-shadow:0 0 4px rgba(0,0,0,.4)}
+.car-dot.active{background:var(--cw-gold);border-color:var(--cw-gold);transform:scale(1.25)}
+
+/* 左右箭头 */
+.car-arrow{position:absolute;top:50%;transform:translateY(-50%);z-index:6;width:40px;height:40px;border:1px solid rgba(255,255,255,.5);background:rgba(0,0,0,.25);color:#fff;font-size:20px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:.25s ease;backdrop-filter:blur(4px)}
+.car-arrow:hover{background:var(--cw-gold);border-color:var(--cw-gold);color:#111}
+.car-prev{left:14px}.car-next{right:14px}
+
+/* ---- 右侧产品卡 ---- */
+.car-side{display:flex;flex-direction:column;gap:28px}
+.car-card{display:grid;grid-template-columns:110px 1fr;gap:22px;align-items:center;padding-bottom:28px;border-bottom:1px solid var(--cw-line)}
+.car-card:last-child{border-bottom:none;padding-bottom:0;grid-template-columns:1fr 110px}
+.car-card:last-child .car-card-img{order:2}
+.car-card-img{width:110px;height:130px;object-fit:cover;background:var(--cw-bg);border:1px solid var(--cw-line);flex:none}
+.car-card h3{font-size:20px;font-weight:500;margin:0 0 8px;letter-spacing:.2px}
+.car-card .car-sub{font-size:11px;letter-spacing:2px;color:var(--cw-gold);text-transform:uppercase;margin:0 0 12px}
+.car-card p{font-size:13px;line-height:1.7;color:var(--cw-muted);margin:0 0 18px}
+.car-btn{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--cw-ink);background:transparent;color:var(--cw-ink);padding:11px 20px;font-size:11px;letter-spacing:2px;cursor:pointer;transition:.25s ease}
+.car-btn:hover{background:var(--cw-ink);color:var(--cw-bg)}
+
+/* ---- 移动端 ---- */
+@media(max-width:900px){
+  .car-layout{grid-template-columns:1fr;gap:36px}
+  .car-stage{aspect-ratio:4/3}
+  .car-card{grid-template-columns:96px 1fr;gap:16px}
+  .car-card:last-child{grid-template-columns:96px 1fr}
+  .car-card:last-child .car-card-img{order:0}
+  .car-card-img{width:96px;height:112px}
+  .car-arrow{width:34px;height:34px;font-size:17px}
+  .car-head{margin-bottom:32px}
+}
+
+/* 尊重减少动态效果：关闭 Ken Burns，轮播仍可手动切换（JS 会停自动播放） */
+@media(prefers-reduced-motion:reduce){
+  .car-slide,.car-slide figcaption{transition:none}
+  .car-slide.active img{animation:none}
+}
