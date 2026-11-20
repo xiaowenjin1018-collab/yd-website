@@ -1,0 +1,65 @@
+/* YOU DESIGN — lightweight motion system (replaces the broken video on old site) */
+
+/* 1. Hero slow zoom (Ken Burns) — cinematic movement without video weight */
+@keyframes yd-kenburns {
+  0%   { transform: scale(1.04) translate(0, 0); }
+  100% { transform: scale(1.16) translate(-1.5%, -1%); }
+}
+.kb {
+  animation: yd-kenburns 24s ease-in-out infinite alternate;
+  will-change: transform;
+}
+
+/* 2. Gold shimmer sweep on CTA / dividers */
+@keyframes yd-shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+.shimmer {
+  background-image: linear-gradient(105deg, transparent 30%, rgba(255,255,255,.28) 48%, transparent 66%);
+  background-size: 200% 100%;
+  animation: yd-shimmer 4.5s linear infinite;
+}
+
+/* 3. Slow float for accent elements */
+@keyframes yd-float {
+  0%,100% { transform: translateY(0); }
+  50%     { transform: translateY(-10px); }
+}
+.float { animation: yd-float 6s ease-in-out infinite; }
+
+/* 4. Scroll parallax target (JS sets --py) */
+.parallax { transform: translateY(var(--py, 0px)); will-change: transform; }
+
+/* 5. Staggered reveal — children rise in sequence */
+.reveal-stagger > * {
+  opacity: 0;
+  transform: translateY(26px);
+  transition: opacity .75s ease, transform .75s ease;
+}
+.reveal-stagger.in > * { opacity: 1; transform: none; }
+.reveal-stagger.in > *:nth-child(1) { transition-delay: .05s; }
+.reveal-stagger.in > *:nth-child(2) { transition-delay: .14s; }
+.reveal-stagger.in > *:nth-child(3) { transition-delay: .23s; }
+.reveal-stagger.in > *:nth-child(4) { transition-delay: .32s; }
+.reveal-stagger.in > *:nth-child(5) { transition-delay: .41s; }
+.reveal-stagger.in > *:nth-child(6) { transition-delay: .50s; }
+
+/* 6. Subtle grain-free vignette pulse for dark schemes */
+@keyframes yd-breathe {
+  0%,100% { opacity: .55; }
+  50%     { opacity: .78; }
+}
+.breathe { animation: yd-breathe 7s ease-in-out infinite; }
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .kb, .shimmer, .float, .breathe, .parallax { animation: none !important; transform: none !important; }
+  .reveal, .reveal-stagger > * { opacity: 1 !important; transform: none !important; transition: none !important; }
+}
+
+/* Mobile: tame heavy motion */
+@media (max-width: 900px) {
+  .kb { animation-duration: 34s; }
+  .parallax { transform: none !important; }
+}
