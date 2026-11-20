@@ -32,7 +32,7 @@ header{position:sticky;top:0;z-index:200;background:#fff;border-bottom:1px solid
 .hero-r{position:relative;min-height:640px;background:var(--soft);overflow:hidden}
 .hero-r img{width:100%;height:100%;object-fit:cover;display:block}
 .hero-r .cap{position:absolute;bottom:0;right:0;background:#fff;padding:12px 18px;font-size:10px;letter-spacing:1.5px;text-transform:uppercase}
-.cats{border-bottom:1px solid var(--line);display:grid;grid-template-columns:repeat(5,1fr)}
+.cats{border-bottom:1px solid var(--line);display:grid;grid-template-columns:repeat(6,1fr)}
 .cat{padding:30px 20px;border-right:1px solid var(--line);cursor:pointer;transition:background .25s}
 .cat:last-child{border-right:none}.cat:hover{background:var(--soft)}
 .cat .n{font-size:10px;color:var(--gold);letter-spacing:2px}
@@ -104,6 +104,44 @@ header{position:sticky;top:0;z-index:200;background:#fff;border-bottom:1px solid
 .step .ln{position:absolute;left:0;bottom:0;height:2px;background:var(--gold);width:0;transition:width .4s}
 .step:hover .ln{width:100%}
 
+/* ---- Fixed joinery / architectural interiors ---- */
+.joinery{display:grid;grid-template-columns:.9fr 1.1fr;background:var(--soft);min-height:560px}
+.joinery-visual{position:relative;overflow:hidden;min-height:560px;background:#1a1a1a}
+.joinery-visual img{width:100%;height:100%;object-fit:cover}
+.joinery-visual .jv-tag{position:absolute;left:0;bottom:0;background:var(--ink);color:#fff;padding:14px 20px;font-size:10px;letter-spacing:2px;text-transform:uppercase}
+.joinery-body{padding:76px 60px;display:flex;flex-direction:column;justify-content:center}
+.joinery-body .kicker{font-size:11px;letter-spacing:3px;color:var(--gold);text-transform:uppercase;margin-bottom:18px}
+.joinery-body h2{font-size:clamp(30px,3.1vw,44px);font-weight:400;letter-spacing:-1px;line-height:1.15;margin-bottom:20px}
+.joinery-body>p{font-size:14px;color:var(--muted);line-height:1.8;max-width:540px;margin-bottom:28px}
+.jscope{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.jscope div{border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:18px 20px}
+.jscope b{display:block;font-size:13px;font-weight:400;margin-bottom:4px}
+.jscope span{font-size:11px;color:var(--muted);line-height:1.5}
+.joinery-cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:30px}
+
+/* ---- Applications / project types ---- */
+.apps{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.app{border-right:1px solid var(--line);border-bottom:1px solid var(--line);position:relative;overflow:hidden;background:var(--soft)}
+.app .aph{height:250px;overflow:hidden}
+.app .aph img{transition:transform .6s}
+.app:hover .aph img{transform:scale(1.06)}
+.app .ab{padding:22px 22px 26px}
+.app .ab .an{font-size:10px;letter-spacing:2px;color:var(--gold)}
+.app .ab h4{font-size:19px;font-weight:400;margin:8px 0 8px}
+.app .ab p{font-size:12px;color:var(--muted);line-height:1.6}
+
+/* ---- Blog teaser ---- */
+.blog-teaser{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.bt{border-right:1px solid var(--line);border-bottom:1px solid var(--line);display:flex;flex-direction:column}
+.bt .btim{height:190px;overflow:hidden;background:var(--soft)}
+.bt .btim img{transition:transform .5s}
+.bt:hover .btim img{transform:scale(1.05)}
+.bt .btb{padding:20px 22px 24px;display:flex;flex-direction:column;flex:1}
+.bt .btm{font-size:10px;letter-spacing:1.5px;color:var(--gold);text-transform:uppercase}
+.bt h4{font-size:16px;font-weight:400;line-height:1.4;margin:10px 0}
+.bt p{font-size:12px;color:var(--muted);line-height:1.6;flex:1}
+.bt .read{margin-top:14px;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;border-bottom:1px solid var(--ink);align-self:flex-start;padding-bottom:3px}
+
 /* ---- Proof / figures ---- */
 .proof{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line);margin-top:40px}
 .pfig{border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:34px 26px}
@@ -147,6 +185,9 @@ footer{padding:64px 0 28px}
  .mats{grid-template-columns:repeat(2,1fr)}.mat .sw{height:150px}
  .steps{grid-template-columns:repeat(2,1fr)}
  .proof{grid-template-columns:repeat(2,1fr)}
+ .joinery{grid-template-columns:1fr}.joinery-visual{min-height:340px}.joinery-body{padding:52px 24px}
+ .apps{grid-template-columns:repeat(2,1fr)}.app .aph{height:200px}
+ .blog-teaser{grid-template-columns:1fr}.bt .btim{height:210px}
  .faq summary{padding-right:36px}.faq details p{padding-right:30px}
  .wrap{padding:0 22px}header{padding:0 22px}
 }
