@@ -1,212 +1,846 @@
 [
  {
-  "id": "LD-S01",
-  "cat": "Seating",
-  "name": "Lapiaz Modular Sofa",
-  "img": "173644889.jpg",
-  "desc": "Beige upholstery with hand-applied gold fissure detail. A sculptural modular system that reads as architecture in a living space.",
+  "id": "3572957",
+  "code": "YD-2957",
+  "name": "Angra Black",
+  "cat": "Objects",
+  "img": "cat_173625705.jpg",
+  "gallery": [
+   "173625707.jpg",
+   "173625708.jpg",
+   "173625706.jpg",
+   "173625709.jpg"
+  ],
+  "desc": "Wood structure upholstered in polyester with foam inside and base in polished hammered brass.",
+  "paras": [
+   "Wood structure upholstered in polyester with foam inside and base in polished hammered brass.",
+   "Upholstery: Sierra Disegno 315 Base: polished hammered brass.",
+   "Dimensions W 81 CM | D 86 CM | H 70 CM W 31.9 IN | D 33.9 IN| H 27.6 Back H: 38 CM | Seat D: 59 CM | Seat H: 70 CM Back H: 15.0 IN | Seat D: 23.2 IN | Seat H: 15.4 IN",
+   "Our top-notch woodworking and hardware factories aim to bring your design ideas to life",
+   "Living Room Furniture Dining Room Furniture Bed Room Furniture Office Furniture Art Lightings Home Decoration",
+   "WhatsApp: +8613434835596 Email： sales1@youdesignart.com Address： 6th Floor, Building A3, Zone A, Shanghua Intelligent Manufacturing Industrial Park, Lecong Town, Shunde District, Foshan City Guangdong Province, China"
+  ],
+  "source": "youdesignart.com/productinfo/3572957.html",
   "spec": {
-   "Width": "320 cm",
-   "Depth": "105 cm",
-   "Height": "72 cm",
    "MOQ": "1 pc",
-   "Frame": "Solid wood",
-   "Finish": "Gold leaf / velvet"
+   "Width": "81 cm",
+   "Depth": "86 cm",
+   "Height": "70 cm",
+   "Lead time": "25-35 days"
   }
  },
  {
-  "id": "SO-05",
-  "cat": "Seating",
-  "name": "Ivory Signature Sofa",
-  "img": "173644952.jpg",
-  "desc": "Clean three-seat silhouette with sculpted gilt arms. The definitive statement piece for villas and formal reception rooms.",
+  "id": "3573458",
+  "code": "YD-3458",
+  "name": "Bonsai",
+  "cat": "Tables",
+  "img": "173630757.jpg",
+  "gallery": [
+   "173630756.jpg",
+   "173630755.jpg",
+   "33307268.jpg"
+  ],
+  "desc": "Table manually produced from wood with a irregular surface finish and a unique faceted form. Comes in a high gloss black lacquer finish.",
+  "paras": [
+   "Table manually produced from wood with a irregular surface finish and a unique faceted form. Comes in a high gloss black lacquer finish.",
+   "Black lacquer with high gloss varnish finish on mahogony structure.",
+   "Dimensions W 200 CM | D 125 CM | H 77 CM W 78.7 IN | D 49.2 IN | H 30.3 IN",
+   "Customization Custom sizes and colors are available with an upcharge.",
+   "Our top-notch woodworking and hardware factories aim to bring your design ideas to life",
+   "Living Room Furniture Dining Room Furniture Bed Room Furniture Office Furniture Art Lightings Home Decoration"
+  ],
+  "source": "youdesignart.com/productinfo/3573458.html",
   "spec": {
-   "Width": "260 cm",
-   "Depth": "98 cm",
+   "MOQ": "1 pc",
+   "Width": "200 cm",
+   "Depth": "125 cm",
+   "Height": "77 cm",
+   "Lead time": "25-35 days"
+  }
+ },
+ {
+  "id": "3573495",
+  "code": "YD-3495",
+  "name": "Boulevard",
+  "cat": "Objects",
+  "img": "cat_173631306.jpg",
+  "gallery": [
+   "173631307.jpg",
+   "173631305.jpg",
+   "173631304.jpg",
+   "173631309.jpg"
+  ],
+  "desc": "Leather top, lacquered wood, nickel-plated cast brass handlers, stainless steel.",
+  "paras": [
+   "Leather top, lacquered wood, nickel-plated cast brass handlers, stainless steel.",
+   "Dimensions W 190 CM | D 180 CM | H 78 CM W 74.8 IN | D 70.9 IN | H 30.7 IN",
+   "Customization Custom sizes, materials, and finishes are available.",
+   "Clean and Care Glass cleaner for the mirror part, dry cloth for the lacquered and leather components.",
+   "Our top-notch woodworking and hardware factories aim to bring your design ideas to life",
+   "Living Room Furniture Dining Room Furniture Bed Room Furniture Office Furniture Art Lightings Home Decoration"
+  ],
+  "source": "youdesignart.com/productinfo/3573495.html",
+  "spec": {
+   "MOQ": "1 pc",
+   "Width": "190 cm",
+   "Depth": "180 cm",
    "Height": "78 cm",
-   "MOQ": "1 pc",
-   "Frame": "Solid wood",
-   "Finish": "Ivory boucle / gold"
+   "Lead time": "25-35 days"
   }
  },
  {
-  "id": "LD-A03",
-  "cat": "Seating",
-  "name": "Gilt Base Lounge Chair",
-  "img": "173625705.jpg",
-  "desc": "Black textured upholstery set on a sculptural gilt base. A collector-grade accent chair for suites and galleries.",
-  "spec": {
-   "Width": "92 cm",
-   "Depth": "88 cm",
-   "Height": "84 cm",
-   "MOQ": "1 pc",
-   "Frame": "Cast metal",
-   "Finish": "Black boucle / gold"
-  }
- },
- {
-  "id": "LD-A09",
-  "cat": "Seating",
-  "name": "Emerald Velvet Armchair",
-  "img": "173644843.jpg",
-  "desc": "Deep emerald velvet framed by hand-polished gold arms. Tailored comfort with a strong graphic presence.",
-  "spec": {
-   "Width": "96 cm",
-   "Depth": "90 cm",
-   "Height": "86 cm",
-   "MOQ": "1 pc",
-   "Frame": "Solid wood",
-   "Finish": "Emerald velvet / gold"
-  }
- },
- {
-  "id": "LD-B07",
-  "cat": "Bedroom",
-  "name": "Lapiaz Bed",
-  "img": "173645372.jpg",
-  "desc": "Carved black headboard with golden branch inlay. Turns the bedroom into a composed, gallery-like interior.",
-  "spec": {
-   "Width": "220 cm",
-   "Depth": "230 cm",
-   "Height": "140 cm",
-   "MOQ": "1 pc",
-   "Frame": "Solid wood",
-   "Finish": "Black lacquer / gold"
-  }
- },
- {
-  "id": "BD-12",
-  "cat": "Bedroom",
-  "name": "Ivory Platform Bed",
-  "img": "173645444.jpg",
-  "desc": "Low platform bed wrapped in soft neutral upholstery. Quiet luxury with a generous, architectural footprint.",
-  "spec": {
-   "Width": "210 cm",
-   "Depth": "225 cm",
-   "Height": "95 cm",
-   "MOQ": "1 pc",
-   "Frame": "Solid wood",
-   "Finish": "Ivory fabric"
-  }
- },
- {
-  "id": "LD-T12",
-  "cat": "Tables",
-  "name": "Boulevard Desk",
-  "img": "173631957.jpg",
-  "desc": "Marble top on a faceted metallic base. A refined workspace for private studios and executive offices.",
-  "spec": {
-   "Width": "180 cm",
-   "Depth": "80 cm",
-   "Height": "75 cm",
-   "MOQ": "1 pc",
-   "Top": "Natural marble",
-   "Base": "Faceted metal"
-  }
- },
- {
-  "id": "TB-04",
-  "cat": "Tables",
-  "name": "Faceted Centre Table",
-  "img": "173631789.jpg",
-  "desc": "Faceted black volume on a warm gilt plinth. A sculptural coffee table that anchors a seating arrangement.",
-  "spec": {
-   "Width": "120 cm",
-   "Depth": "110 cm",
-   "Height": "42 cm",
-   "MOQ": "1 pc",
-   "Top": "Black lacquer",
-   "Base": "Gold leaf"
-  }
- },
- {
-  "id": "TB-08",
-  "cat": "Tables",
-  "name": "Sculptural Side Table",
-  "img": "173631306.jpg",
-  "desc": "Folded metal planes forming a compact side table. Precision engineering reduced to a single gesture.",
-  "spec": {
-   "Width": "60 cm",
-   "Depth": "55 cm",
-   "Height": "55 cm",
-   "MOQ": "1 pc",
-   "Material": "Brushed metal",
-   "Finish": "Bronze"
-  }
- },
- {
-  "id": "LD-C01",
+  "id": "3573503",
+  "code": "YD-3503",
+  "name": "Crochet",
   "cat": "Storage",
-  "name": "Textured Gilt Cabinet",
-  "img": "173631641.jpg",
-  "desc": "Hand-textured gold surface with a sculpted silhouette. Storage that functions as a statement object.",
+  "img": "cat_173631641.jpg",
+  "gallery": [
+   "173631642.jpg",
+   "173631647.jpg",
+   "173631646.jpg",
+   "173631645.jpg"
+  ],
+  "desc": "Night stand made in wood, finished with a golden leaf with a translucent beige and a high gloss varnish. The stand is finished with a carved metal structure. Contains seven drawers. The handles are nicke",
+  "paras": [
+   "Night stand made in wood, finished with a golden leaf with a translucent beige and a high gloss varnish. The stand is finished with a carved metal structure. Contains seven drawers. The handles are nickeled and then lacquered.",
+   "Arts and Techniques Joinery, Jewelry, Foundry, Application of Golden Leaf and Varnishing.",
+   "Wood, Golden Leaf, Nickeled Brass, High Gloss beige Varnish.",
+   "Dimensions W 65 CM | D 38.5 CM | H 60 CM W 25.6 IN | D 15.2 IN | H 23.6 IN",
+   "Customization Custom sizes and colors are available with an upcharge.",
+   "Our top-notch woodworking and hardware factories aim to bring your design ideas to life"
+  ],
+  "source": "youdesignart.com/productinfo/3573503.html",
   "spec": {
-   "Width": "110 cm",
+   "MOQ": "1 pc",
+   "Lead time": "25-35 days"
+  }
+ },
+ {
+  "id": "3573517",
+  "code": "YD-3517",
+  "name": "Diamond",
+  "cat": "Storage",
+  "img": "cat_173631789.jpg",
+  "gallery": [
+   "173631790.jpg",
+   "173631792.jpg",
+   "173631791.jpg",
+   "33307268.jpg"
+  ],
+  "desc": "Nightstand made in wood, finished with a golden leaf and black, high gloss varnish. Contains one drawer. The interior is finished in golden leaf.",
+  "paras": [
+   "Nightstand made in wood, finished with a golden leaf and black, high gloss varnish. Contains one drawer. The interior is finished in golden leaf.",
+   "Arts and Techniques Joinery, Carving, Varnishing and Application of Golden and Silver Leaf.",
+   "Wood, Golden and Silver leaf finished with a luxurious shade of translucent black, High Gloss Varnish.",
+   "Dimensions W 77 CM | 30.3 IN D 37 CM | 14.6 IN H 48 CM | 18.9 IN",
+   "Customization Custom sizes and colors are available with an upcharge.",
+   "Our top-notch woodworking and hardware factories aim to bring your design ideas to life"
+  ],
+  "source": "youdesignart.com/productinfo/3573517.html",
+  "spec": {
+   "MOQ": "1 pc",
+   "Width": "77 cm",
+   "Depth": "37 cm",
+   "Height": "48 cm",
+   "Lead time": "25-35 days"
+  }
+ },
+ {
+  "id": "3573525",
+  "code": "YD-3525",
+  "name": "Empire",
+  "cat": "Tables",
+  "img": "cat_173631957.jpg",
+  "gallery": [
+   "173631958.jpg",
+   "173631959.jpg",
+   "173631960.jpg",
+   "173631965.jpg"
+  ],
+  "desc": "Contemporary writing desk composed of a rectangular marble top and two rectangular marble legs with polished brass gold details.",
+  "paras": [
+   "Contemporary writing desk composed of a rectangular marble top and two rectangular marble legs with polished brass gold details.",
+   "Dimensions W 200 CM | D 72 CM | H 77 CM W 78.7 IN | D 28.3 IN | H 30.3 IN",
+   "Customization Custom sizes and colors are available with an upcharge.",
+   "Our top-notch woodworking and hardware factories aim to bring your design ideas to life",
+   "Living Room Furniture Dining Room Furniture Bed Room Furniture Office Furniture Art Lightings Home Decoration",
+   "WhatsApp: +8613434835596 Email： sales1@youdesignart.com Address： 6th Floor, Building A3, Zone A, Shanghua Intelligent Manufacturing Industrial Park, Lecong Town, Shunde District, Foshan City Guangdong Province, China"
+  ],
+  "source": "youdesignart.com/productinfo/3573525.html",
+  "spec": {
+   "MOQ": "1 pc",
+   "Width": "200 cm",
+   "Depth": "72 cm",
+   "Height": "77 cm",
+   "Lead time": "25-35 days"
+  }
+ },
+ {
+  "id": "3573802",
+  "code": "YD-3802",
+  "name": "Empire B",
+  "cat": "Tables",
+  "img": "33307268.jpg",
+  "gallery": [],
+  "desc": "Metamorphosis Dining Table's surface is made in walnut root veneer and includes special textured details that represent a fossil. This piece also embodies high polished brass details to fill the stately",
+  "paras": [
+   "Metamorphosis Dining Table's surface is made in walnut root veneer and includes special textured details that represent a fossil. This piece also embodies high polished brass details to fill the stately base.",
+   "Arts and Techniques Metal Work, Metal Casting, Wood Veneer application",
+   "Dimensions W 330 CM | D 130 CM | H 76 CM W 129.9 IN | D 51.2 IN | H 29.9 IN",
+   "Customization Boca do Lobo's dining tables can be customized in terms of finish and size, which may be subject to an upcharge.",
+   "Our top-notch woodworking and hardware factories aim to bring your design ideas to life",
+   "Living Room Furniture Dining Room Furniture Bed Room Furniture Office Furniture Art Lightings Home Decoration"
+  ],
+  "source": "youdesignart.com/productinfo/3573802.html",
+  "spec": {
+   "MOQ": "1 pc",
+   "Width": "330 cm",
+   "Depth": "130 cm",
+   "Height": "76 cm",
+   "Lead time": "25-35 days"
+  }
+ },
+ {
+  "id": "3574384",
+  "code": "YD-4384",
+  "name": "Fortuna",
+  "cat": "Tables",
+  "img": "173638780.jpg",
+  "gallery": [
+   "173638781.jpg",
+   "173638782.jpg",
+   "33307268.jpg"
+  ],
+  "desc": "Made in wood and polished brass, this upscale dining table incorporates richest nature-inspired design, industrious welding techniques and a manually engraved top that emulates the outlines of log rings,",
+  "paras": [
+   "Made in wood and polished brass, this upscale dining table incorporates richest nature-inspired design, industrious welding techniques and a manually engraved top that emulates the outlines of log rings, reminding the timeline of a tree. Below the expansive 8 seat dining table top is an elegant composition of two scaled organic brass tubes. Fortuna is a unique dining table that embodies the fearless state mind of Boca do Lobo and the availability to customize the features to accommodate the most demanding client’s requirements.",
+   "Dimensions x8 SEATS W 230 CM | D 133 CM | H 76 CM W 90,6 IN | D 52,4 IN | H 29,9 IN",
+   "x10 SEATS W 290 CM | D 133 CM | H 76 CM W 114,2 IN | D 52,4 IN | H 29,9 IN",
+   "x12 SEATS W 350 CM | D 133 CM | H 76 CM W 137,8 IN | D 52,4 IN | H 29,9 IN",
+   "x14 SEATS W 410 CM | D 133 CM | H 76 CM W 161,4 IN | D 52,4 IN | H 29,9 IN",
+   "Our top-notch woodworking and hardware factories aim to bring your design ideas to life"
+  ],
+  "source": "youdesignart.com/productinfo/3574384.html",
+  "spec": {
+   "MOQ": "1 pc",
+   "Width": "230 cm",
+   "Depth": "133 cm",
+   "Height": "76 cm",
+   "Lead time": "25-35 days"
+  }
+ },
+ {
+  "id": "3574388",
+  "code": "YD-4388",
+  "name": "Frank",
+  "cat": "Storage",
+  "img": "33307268.jpg",
+  "gallery": [],
+  "desc": "Set of 4 drawers, with different materials and finishing. The handles are made of polished brass, nickeled and gold plated.",
+  "paras": [
+   "Set of 4 drawers, with different materials and finishing. The handles are made of polished brass, nickeled and gold plated.",
+   "Ebony geometric mosaic veneer finished in a matte varnish and encased in a smoked glass box. (2) Hand carved wood finished in mirror. (3) Burl wood veneer finished with a high gloss varnish. (4) Hand carved wood finished in a high gloss black lacquer and encased in a tempered translucent glass box. Base: Gold leaf finished in a high gloss varnish Hardware: Handcrafted brass pulls finished in natural polished brass, or coated in gold or silver.",
+   "Dimensions W 90 cm | D 60 cm | H 50 cm W 35.4 in | D 23.6 in | H 19.7 in",
+   "Customization Custom sizes and colors are available with an upcharge.",
+   "Clean and Care Dry cloth for the lacquered part and dry cloth metal cleaner for the brass part.",
+   "Our top-notch woodworking and hardware factories aim to bring your design ideas to life"
+  ],
+  "source": "youdesignart.com/productinfo/3574388.html",
+  "spec": {
+   "MOQ": "1 pc",
+   "Width": "90 cm",
+   "Depth": "60 cm",
+   "Height": "50 cm",
+   "Lead time": "25-35 days"
+  }
+ },
+ {
+  "id": "3574842",
+  "code": "YD-4842",
+  "name": "Fred",
+  "cat": "Bedroom",
+  "img": "cat_173643660.jpg",
+  "gallery": [
+   "173643659.jpg",
+   "173643658.jpg",
+   "173643657.jpg",
+   "173643656.jpg"
+  ],
+  "desc": "Living Room Furniture Dining Room Furniture Bed Room Furniture Office Furniture Art Lightings Home Decoration",
+  "paras": [
+   "Our top-notch woodworking and hardware factories aim to bring your design ideas to life",
+   "Living Room Furniture Dining Room Furniture Bed Room Furniture Office Furniture Art Lightings Home Decoration",
+   "WhatsApp: +8613434835596 Email： sales1@youdesignart.com Address： 6th Floor, Building A3, Zone A, Shanghua Intelligent Manufacturing Industrial Park, Lecong Town, Shunde District, Foshan City Guangdong Province, China",
+   "本网站由阿里云提供云计算及安全服务 Powered by 万网 ꁸ Top ꂅ +8613434835596 ꀥ WhatsApp"
+  ],
+  "source": "youdesignart.com/productinfo/3574842.html",
+  "spec": {
+   "MOQ": "1 pc",
+   "Lead time": "25-35 days"
+  }
+ },
+ {
+  "id": "3574972",
+  "code": "YD-4972",
+  "name": "Heritage",
+  "cat": "Storage",
+  "img": "cat_173644790.jpg",
+  "gallery": [
+   "173644794.jpg",
+   "173644793.jpg",
+   "173644792.jpg",
+   "173644791.jpg"
+  ],
+  "desc": "Contains two drawers, finished with hand painted tiles. Interior fully lined with gold leaf.",
+  "paras": [
+   "Contains two drawers, finished with hand painted tiles. Interior fully lined with gold leaf.",
+   "Arts and Techniques Joinery, Hand Painted Tiles, Application of Golden Leaf, Glass Work.",
+   "Gold Leaf, Hand Painted Tiles (blue or sepia), Brass, Wood lacquered in white a high gloss varnish.",
+   "Dimensions W 50.5 CM | D 50.5 CM | H 54.5 CM W 129.9 IN | D 51.2 IN | H 29.9 IN",
+   "Customization Custom sizes and colors are available with an upcharge.",
+   "Clean and Care Damp cloth for the hand painted tiles and a dry cloth for the interior."
+  ],
+  "source": "youdesignart.com/productinfo/3574972.html",
+  "spec": {
+   "MOQ": "1 pc",
+   "Lead time": "25-35 days"
+  }
+ },
+ {
+  "id": "3574976",
+  "code": "YD-4976",
+  "name": "Imperfectio D",
+  "cat": "Seating",
+  "img": "cat_173644843.jpg",
+  "gallery": [
+   "173644841.jpg",
+   "173644844.jpg",
+   "173644842.jpg",
+   "173644849.jpg"
+  ],
+  "desc": "Imperfectio armchair is the expression of imperfect aesthetic, the appeal of that which is authentic art that is truer to life.",
+  "paras": [
+   "Imperfectio armchair is the expression of imperfect aesthetic, the appeal of that which is authentic art that is truer to life.",
+   "Polished brass, Leather. Fabric: MORGAN PRO 925 PUTTY",
+   "Dimensions W 108 CM | D 96 CM | H 67 CM W 42.5 IN | D 37.7 IN | H 26.3 IN SEAT HEIGHT: 45 CM SEAT HEIGHT: 17.7 IN",
+   "Customization Custom sizes and colors are available with an upcharge.",
+   "Our top-notch woodworking and hardware factories aim to bring your design ideas to life",
+   "Living Room Furniture Dining Room Furniture Bed Room Furniture Office Furniture Art Lightings Home Decoration"
+  ],
+  "source": "youdesignart.com/productinfo/3574976.html",
+  "spec": {
+   "MOQ": "1 pc",
+   "Width": "108 cm",
+   "Depth": "96 cm",
+   "Height": "67 cm",
+   "Lead time": "25-35 days"
+  }
+ },
+ {
+  "id": "3574989",
+  "code": "YD-4989",
+  "name": "Imperfectio L",
+  "cat": "Seating",
+  "img": "cat_173644889.jpg",
+  "gallery": [
+   "173644888.jpg",
+   "173644890.jpg",
+   "173644887.jpg",
+   "173644886.jpg"
+  ],
+  "desc": "L-Shaped modern sofa paired with upholstered ottoman. Solid wood structure enveloped by polished brass, founded on slim brass feet.",
+  "paras": [
+   "L-Shaped modern sofa paired with upholstered ottoman. Solid wood structure enveloped by polished brass, founded on slim brass feet.",
+   "Dimensions Sofa: W 200 cm | D 116 cm | H 62 cm W 78.7 in | D 45.6 in | H 24.4in",
+   "Ottoman: W 127 cm | D 101 cm | H 41 cm W 50 in | D 39.7 in | H 16.1 in",
+   "Our top-notch woodworking and hardware factories aim to bring your design ideas to life",
+   "Living Room Furniture Dining Room Furniture Bed Room Furniture Office Furniture Art Lightings Home Decoration",
+   "WhatsApp: +8613434835596 Email： sales1@youdesignart.com Address： 6th Floor, Building A3, Zone A, Shanghua Intelligent Manufacturing Industrial Park, Lecong Town, Shunde District, Foshan City Guangdong Province, China"
+  ],
+  "source": "youdesignart.com/productinfo/3574989.html",
+  "spec": {
+   "MOQ": "1 pc",
+   "Width": "200 cm",
+   "Depth": "116 cm",
+   "Height": "62 cm",
+   "Lead time": "25-35 days"
+  }
+ },
+ {
+  "id": "3574990",
+  "code": "YD-4990",
+  "name": "Imperfectio S",
+  "cat": "Seating",
+  "img": "cat_173644952.jpg",
+  "gallery": [
+   "173644950.jpg",
+   "173644951.jpg",
+   "173644954.jpg",
+   "173644953.jpg"
+  ],
+  "desc": "Imperfectio Sofa is the expression of imperfect aesthetic, the appeal of that which is authentic art that is truer to life.",
+  "paras": [
+   "Imperfectio Sofa is the expression of imperfect aesthetic, the appeal of that which is authentic art that is truer to life.",
+   "Polished brass, Leather. Fabric: MORGAN PRO 925 PUTTY",
+   "Dimensions W 226 cm | D 96 cm | H 67 cm W 88.9 in | D 37.7 in | H 26.3 in",
+   "Customization Custom sizes and colors are available with an upcharge.",
+   "Our top-notch woodworking and hardware factories aim to bring your design ideas to life",
+   "Living Room Furniture Dining Room Furniture Bed Room Furniture Office Furniture Art Lightings Home Decoration"
+  ],
+  "source": "youdesignart.com/productinfo/3574990.html",
+  "spec": {
+   "MOQ": "1 pc",
+   "Width": "226 cm",
+   "Depth": "96 cm",
+   "Height": "67 cm",
+   "Lead time": "25-35 days"
+  }
+ },
+ {
+  "id": "3575018",
+  "code": "YD-5018",
+  "name": "Lapiaz",
+  "cat": "Objects",
+  "img": "cat_173645372.jpg",
+  "gallery": [
+   "173645376.jpg",
+   "173645375.jpg",
+   "173645374.jpg",
+   "173645373.jpg"
+  ],
+  "desc": "Wood structure with casted brass details hammered by hand, upholstered in velvet with foam inside, finished with a polished brass frame. The structure allows the placement of an electrical outlet on the",
+  "paras": [
+   "Wood structure with casted brass details hammered by hand, upholstered in velvet with foam inside, finished with a polished brass frame. The structure allows the placement of an electrical outlet on the sides. It can include USB for charging.",
+   "Wood, Foam, Upholstery, Polished Hammered Brass, Polished Brass.",
+   "Dimensions HEADBOARD W 400 CM | D 20 CM | H 120 CM W 157.4 IN | D 7.9 IN | H 47.2 IN",
+   "BED W 200 CM | D 215 CM | H 30 CM W 78.7 IN | D 84.6 IN | H 11.8 IN",
+   "Our top-notch woodworking and hardware factories aim to bring your design ideas to life",
+   "Living Room Furniture Dining Room Furniture Bed Room Furniture Office Furniture Art Lightings Home Decoration"
+  ],
+  "source": "youdesignart.com/productinfo/3575018.html",
+  "spec": {
+   "MOQ": "1 pc",
+   "Width": "400 cm",
+   "Depth": "20 cm",
+   "Height": "120 cm",
+   "Lead time": "25-35 days"
+  }
+ },
+ {
+  "id": "3575021",
+  "code": "YD-5021",
+  "name": "Lapiaz B",
+  "cat": "Objects",
+  "img": "cat_173645444.jpg",
+  "gallery": [
+   "173645443.jpg",
+   "173645442.jpg",
+   "173645445.jpg",
+   "33307268.jpg"
+  ],
+  "desc": "Wood structure with casted brass details hammered by hand, upholstered in velvet with foam inside, finished with a polished brass frame. The structure allows the placement of an electrical outlet on the",
+  "paras": [
+   "Wood structure with casted brass details hammered by hand, upholstered in velvet with foam inside, finished with a polished brass frame. The structure allows the placement of an electrical outlet on the sides. It can include USB for charging.",
+   "Wood, Foam, Upholstery, Polished Hammered Brass, Polished Brass.",
+   "Dimensions HEADBOARD W 400 CM | D 20 CM | H 120 CM W 157.4 IN | D 7.9 IN | H 47.2 IN",
+   "BED W 200 CM | D 215 CM | H 30 CM W 78.7 IN | D 84.6 IN | H 11.8 IN",
+   "Our top-notch woodworking and hardware factories aim to bring your design ideas to life",
+   "Living Room Furniture Dining Room Furniture Bed Room Furniture Office Furniture Art Lightings Home Decoration"
+  ],
+  "source": "youdesignart.com/productinfo/3575021.html",
+  "spec": {
+   "MOQ": "1 pc",
+   "Width": "400 cm",
+   "Depth": "20 cm",
+   "Height": "120 cm",
+   "Lead time": "25-35 days"
+  }
+ },
+ {
+  "id": "3575972",
+  "code": "YD-5972",
+  "name": "lapiaz tv",
+  "cat": "Storage",
+  "img": "173652586.jpg",
+  "gallery": [
+   "173652585.jpg",
+   "173652584.jpg",
+   "173652583.jpg",
+   "173652597.jpg"
+  ],
+  "desc": "A set composed of two modules. It contains two drawers finished in black lacquer, and smoked glass shelves.",
+  "paras": [
+   "A set composed of two modules. It contains two drawers finished in black lacquer, and smoked glass shelves.",
+   "Polished Gold Plated Brass, polished stainless steel, glass, black lacquer.",
+   "Dimensions W 230 cm | 90.5 in D 45.5 cm | 17.9 in H 50.5 cm | 19.8 in",
+   "Our top-notch woodworking and hardware factories aim to bring your design ideas to life",
+   "Living Room Furniture Dining Room Furniture Bed Room Furniture Office Furniture Art Lightings Home Decoration",
+   "WhatsApp: +8613434835596 Email： sales1@youdesignart.com Address： 6th Floor, Building A3, Zone A, Shanghua Intelligent Manufacturing Industrial Park, Lecong Town, Shunde District, Foshan City Guangdong Province, China"
+  ],
+  "source": "youdesignart.com/productinfo/3575972.html",
+  "spec": {
+   "MOQ": "1 pc",
+   "Lead time": "25-35 days"
+  }
+ },
+ {
+  "id": "3575977",
+  "code": "YD-5977",
+  "name": "Lapiaz C",
+  "cat": "Objects",
+  "img": "cat_173652654.jpg",
+  "gallery": [
+   "173652656.jpg",
+   "173652655.jpg",
+   "173652657.jpg",
+   "173652658.jpg"
+  ],
+  "desc": "Wood structure with brass details hammered by hand, upholstered in velvet with foam inside, finished with a polished brass frame.",
+  "paras": [
+   "Wood structure with brass details hammered by hand, upholstered in velvet with foam inside, finished with a polished brass frame.",
+   "Wood, Foam, Upholstery, Polished. Hammered Brass, Polished Brass.",
+   "Dimensions W 475 CM | D 354 CM | H 90 CM cm W 187 IN | D 139.4 IN | H 35.4 IN in",
+   "Customization Custom sizes and colors are available with an upcharge.",
+   "Our top-notch woodworking and hardware factories aim to bring your design ideas to life",
+   "Living Room Furniture Dining Room Furniture Bed Room Furniture Office Furniture Art Lightings Home Decoration"
+  ],
+  "source": "youdesignart.com/productinfo/3575977.html",
+  "spec": {
+   "MOQ": "1 pc",
+   "Width": "475 cm",
+   "Depth": "354 cm",
+   "Height": "90 cm",
+   "Lead time": "25-35 days"
+  }
+ },
+ {
+  "id": "3576036",
+  "code": "YD-6036",
+  "name": "Newton Myrtile",
+  "cat": "Objects",
+  "img": "173653036.jpg",
+  "gallery": [
+   "173653039.jpg",
+   "173653038.jpg",
+   "173653037.jpg",
+   "33307268.jpg"
+  ],
+  "desc": "Built from brass spheres, joint to produce an outstanding pattern and structure, finished in black lacquer and gold plated. Its surface texture designed to resemble cut wood, is also gold plated.",
+  "paras": [
+   "Built from brass spheres, joint to produce an outstanding pattern and structure, finished in black lacquer and gold plated. Its surface texture designed to resemble cut wood, is also gold plated.",
+   "High gloss black lacquer, and gold plated spheres with gold plated brass surface with wood texture",
+   "Dimensions W 260 CM | D 142 CM | H 78 CM W 102.4 IN | D 55.9 IN | 30.7 IN",
+   "Customization Custom sizes and colors (lacquers, metal coatings, and wood veneers for table surface) are available with an upcharge.",
+   "Our top-notch woodworking and hardware factories aim to bring your design ideas to life",
+   "Living Room Furniture Dining Room Furniture Bed Room Furniture Office Furniture Art Lightings Home Decoration"
+  ],
+  "source": "youdesignart.com/productinfo/3576036.html",
+  "spec": {
+   "MOQ": "1 pc",
+   "Width": "260 cm",
+   "Depth": "142 cm",
+   "Height": "78 cm",
+   "Lead time": "25-35 days"
+  }
+ },
+ {
+  "id": "3576342",
+  "code": "YD-6342",
+  "name": "Stonehenge",
+  "cat": "Objects",
+  "img": "173655178.jpg",
+  "gallery": [
+   "173655177.jpg",
+   "173655176.jpg",
+   "173655175.jpg",
+   "173655184.jpg"
+  ],
+  "desc": "Finding inspiration in the prehistoric monument Stonehenge, positioned asymmetrically and composed by a striking variety of finishes and materials.",
+  "paras": [
+   "Finding inspiration in the prehistoric monument Stonehenge, positioned asymmetrically and composed by a striking variety of finishes and materials.",
+   "Arts and Techniques Glass Work, Metal Work, Foundry, Marble Works.",
+   "Dimensions W 263 CM | D 122 CM | H 77 CM W 103.5 IN | D 48 IN | H 30.3 IN",
+   "Customization Custom sizes and colors are available with an upcharge.",
+   "Our top-notch woodworking and hardware factories aim to bring your design ideas to life",
+   "Living Room Furniture Dining Room Furniture Bed Room Furniture Office Furniture Art Lightings Home Decoration"
+  ],
+  "source": "youdesignart.com/productinfo/3576342.html",
+  "spec": {
+   "MOQ": "1 pc",
+   "Width": "263 cm",
+   "Depth": "122 cm",
+   "Height": "77 cm",
+   "Lead time": "25-35 days"
+  }
+ },
+ {
+  "id": "3576357",
+  "code": "YD-6357",
+  "name": "Versailles II",
+  "cat": "Seating",
+  "img": "173655333.jpg",
+  "gallery": [
+   "173655330.jpg",
+   "173655331.jpg",
+   "173655329.jpg",
+   "173655332.jpg"
+  ],
+  "desc": "Sofa made in a wood structure and panels in a manual sculpture, produced in resin and finished with restoration techniques similar to stone. The upholstery fabric is made up of six velvety and removable",
+  "paras": [
+   "Sofa made in a wood structure and panels in a manual sculpture, produced in resin and finished with restoration techniques similar to stone. The upholstery fabric is made up of six velvety and removable pillows. The legs are produced in acrylic turns.",
+   "Resin/Fiber, velvet, Acrylic, and Wood. Finished with restoration techniques similar to stone.",
+   "Dimensions W 252 CM | D 84 CM | H 72 CM W 99.2 IN | D 33.1 IN | H 28.3 IN",
+   "Customization Custom sizes and colors are available with an upcharge.",
+   "Our top-notch woodworking and hardware factories aim to bring your design ideas to life",
+   "Living Room Furniture Dining Room Furniture Bed Room Furniture Office Furniture Art Lightings Home Decoration"
+  ],
+  "source": "youdesignart.com/productinfo/3576357.html",
+  "spec": {
+   "MOQ": "1 pc",
+   "Width": "252 cm",
+   "Depth": "84 cm",
+   "Height": "72 cm",
+   "Lead time": "25-35 days"
+  }
+ },
+ {
+  "id": "3577904",
+  "code": "YD-7904",
+  "name": "Diamond B",
+  "cat": "Bath",
+  "img": "173668129.jpg",
+  "gallery": [
+   "173668130.jpg",
+   "173668131.jpg",
+   "173668128.jpg",
+   "173668133.jpg"
+  ],
+  "desc": "A striking freestanding bathtub crafted with a sculptural wooden structure and finished in a high gloss black varnish. Its bold, irregular silhouette draws inspiration from the multifaceted lines of a diamond, while the",
+  "paras": [
+   "A striking freestanding bathtub crafted with a sculptural wooden structure and finished in a high gloss black varnish. Its bold, irregular silhouette draws inspiration from the multifaceted lines of a diamond, while the built-in oval tub ensures exceptional comfort. Handmade using refined techniques such as wood carving, hammering, metal treatment, lacquering, varnishing and polishing, this bathtub transforms any bathroom into a luxurious statement space.",
+   "Wood carving, Hammering, Foundry, Metal treatment, Lacquering, Varnishing, Polishing.",
+   "Structure: Fiberglass, High gloss black lacquer. Tub: Fiberglass, High gloss black lacquer. Stripe: Fiberglass, High gloss gold lacquer. Drainage: Floor.",
+   "Clean with a soft damp cloth; avoid abrasive cleaners and solvents.",
+   "Our top-notch woodworking and hardware factories aim to bring your design ideas to life",
+   "Living Room Furniture Dining Room Furniture Bed Room Furniture Office Furniture Art Lightings Home Decoration"
+  ],
+  "source": "youdesignart.com/productinfo/3577904.html",
+  "spec": {
+   "MOQ": "1 pc",
+   "Lead time": "25-35 days"
+  }
+ },
+ {
+  "id": "3593945",
+  "code": "YD-3945",
+  "name": "Arcadia Modular Sofa",
+  "cat": "Seating",
+  "img": "173772359.jpg",
+  "gallery": [
+   "173772360.jpg",
+   "33307268.jpg"
+  ],
+  "desc": "The Arcadia Modular Sofa is a contemporary seating system designed to shape space through curves, connection, and flexibility. Its flowing geometry transforms traditional seating into an inviting landscape for conversati",
+  "paras": [
+   "The Arcadia Modular Sofa is a contemporary seating system designed to shape space through curves, connection, and flexibility. Its flowing geometry transforms traditional seating into an inviting landscape for conversation, collaboration, and relaxation.",
+   "Composed of curved modular elements, Arcadia can be arranged into semi-circular, circular, or open compositions, adapting seamlessly to different spatial needs. Integrated backrests and optional cushions provide comfortable support while maintaining a soft, architectural silhouette.",
+   "Generous seating depth and continuous forms encourage informal interaction, making Arcadia ideal for lounges, reception areas, collaborative offices, and public interiors. Whether configured as a single composition or divided into separate zones, the system offers complete freedom of expression.",
+   "Arcadia redefines shared seating by combining comfort, modularity, and visual harmony.",
+   "Arcadia reflects a balance between sculptural design and functional flexibility.",
+   "Dimensions vary according to configuration and number of elements"
+  ],
+  "source": "youdesignart.com/productinfo/3593945.html",
+  "spec": {
+   "MOQ": "1 pc",
+   "Lead time": "25-35 days"
+  }
+ },
+ {
+  "id": "8444",
+  "code": "YD-8444",
+  "name": "Minimalist Round Stainless Steel Coffee Ta",
+  "cat": "Seating",
+  "img": "33307369.jpg",
+  "gallery": [
+   "33307366.jpg",
+   "33307367.jpg",
+   "33307268.jpg"
+  ],
+  "desc": "The Minimalist Round Stainless Steel Coffee Table is a sleek, functional centerpiece designed for contemporary living rooms, apartments, and hotel lounges. Combining a 12mm tempered glass top with a brushed stainless ste",
+  "paras": [
+   "The Minimalist Round Stainless Steel Coffee Table is a sleek, functional centerpiece designed for contemporary living rooms, apartments, and hotel lounges. Combining a 12mm tempered glass top with a brushed stainless steel base, this table balances durability with minimalist aesthetics. The 80cm diameter and 45cm height make it ideal for small to medium spaces, while the modular design allows pairing with side tables for cohesive decor.",
+   "Tempered Glass Top: 12mm thickness, scratch-resistant (7H hardness) and heat-resistant (withstands 200°C), passing 100kg central load test.",
+   "Stainless Steel Base: 304-grade steel with brushed finish, resistant to rust (salt spray tested for 500 hours) and easy to clean.",
+   "Cable Management Hole: 10cm diameter hole in the glass top for organizing charger cables in living rooms and offices.",
+   "Anti-Slip Pads: Rubber inserts under the base prevent scratches on hardwood and tile floors.",
+   "Dual-Layer Option: Optional lower metal shelf (40cm height) for additional storage, available as a custom add-on."
+  ],
+  "source": "youdesignart.com/productinfo/8444.html",
+  "spec": {
+   "MOQ": "1 pc",
+   "Lead time": "25-35 days"
+  }
+ },
+ {
+  "id": "8445",
+  "code": "YD-8445",
+  "name": "Italian Velvet Chaise Lounge for Luxury Li",
+  "cat": "Seating",
+  "img": "33307376.jpg",
+  "gallery": [
+   "33307379.jpg",
+   "33307378.jpg",
+   "33307377.jpg",
+   "33307268.jpg"
+  ],
+  "desc": "Inspired by the renowned Cirque de Soleil, This Armchair is a captivating blend of style and sensory experience. Designed to invoke, provoke, and evoke, this armchair features soft, sultry curves that gently embrace the",
+  "paras": [
+   "Inspired by the renowned Cirque de Soleil, This Armchair is a captivating blend of style and sensory experience. Designed to invoke, provoke, and evoke, this armchair features soft, sultry curves that gently embrace the sitter, offering an elegant combination of vintage and modern aesthetics. The brass accents perfectly complement the armchair’s graceful lines, adding a touch of timeless sophistication.",
+   "The Italian Velvet Chaise Lounge is a symbol of refined elegance, featuring imported Italian velvet upholstery and a solid birchwood frame, designed for discerning living rooms and hotel lounges. The 180cm length and curved silhouette provide ample space for relaxation, while the high-density foam cushion (35D) and adjustable headrest offer personalized comfort. The tufted backrest and brass-finished legs add a touch of mid-century modern luxury.",
+   "Luxury Velvet Upholstery: 100% polyester velvet from Italy, available in 8 rich colors (e.g., emerald green, burgundy), with a 10-year warranty against fading.",
+   "Solid Birchwood Frame: Kiln-dried wood with reinforced joints, tested to 200kg static load and 50,000-cycle durability (ASTM D4169).",
+   "Adjustable Headrest: 3-position tilt (0°, 15°, 30°) to support reading, watching TV, or napping.",
+   "Deep Cushioning: 20cm seat depth with pocket spring core, providing balanced support and pressure relief."
+  ],
+  "source": "youdesignart.com/productinfo/8445.html",
+  "spec": {
+   "MOQ": "1 pc",
+   "Lead time": "25-35 days"
+  }
+ },
+ {
+  "id": "8453",
+  "code": "YD-8453",
+  "name": "Light Luxury Wood Sofa",
+  "cat": "Seating",
+  "img": "33307397.jpg",
+  "gallery": [
+   "33307398.jpg",
+   "33307399.jpg",
+   "33307268.jpg"
+  ],
+  "desc": "Artisanal Craftsmanship: The hand-hammered brass surface emphasizes unique imperfections, giving each chair a one-of-a-kind charm that celebrates the beauty of handcrafted design.",
+  "paras": [
+   "Artisanal Craftsmanship: The hand-hammered brass surface emphasizes unique imperfections, giving each chair a one-of-a-kind charm that celebrates the beauty of handcrafted design.",
+   "Elegant Material Combination: A fusion of polished brass and curved wooden structure creates a modern, sophisticated look suitable for high-end living and commercial spaces.",
+   "Comfortable Upholstery: Fully upholstered in premium Macau Sand fabric, offering soft and luxurious seating for extended comfort in lounges, living rooms, or offices.",
+   "Swivel Base: Equipped with a brass-plated swivel base, providing ease of rotation and flexibility while maintaining a sleek, polished finish.",
+   "Generous Dimensions: With ample seating space, the chair provides comfortable seating with dimensions of 100 cm in width, 85 cm in depth, and 65 cm in height.",
+   "Customization Options: Tailored to meet your specific needs, with available custom sizes, fabrics, and finishes to match your interior style."
+  ],
+  "source": "youdesignart.com/productinfo/8453.html",
+  "spec": {
+   "MOQ": "1 pc",
+   "Lead time": "25-35 days"
+  }
+ },
+ {
+  "id": "8456",
+  "code": "YD-8456",
+  "name": "High-End Creative Living Room Coffee Table",
+  "cat": "Tables",
+  "img": "33307268.jpg",
+  "gallery": [],
+  "desc": "This sophisticated side table has an acrylic base, and a cast brass table top, with a unique surface texture.",
+  "paras": [
+   "This sophisticated side table has an acrylic base, and a cast brass table top, with a unique surface texture.",
+   "Dimensions W 36 CM | D 36 CM | H 50 CM W 14.2 IN | D 14.2 IN | H 9.7 IN",
+   "Customization Custom sizes and colors are available with an upcharge.",
+   "Our top-notch woodworking and hardware factories aim to bring your design ideas to life",
+   "Living Room Furniture Dining Room Furniture Bed Room Furniture Office Furniture Art Lightings Home Decoration",
+   "WhatsApp: +8613434835596 Email： sales1@youdesignart.com Address： 6th Floor, Building A3, Zone A, Shanghua Intelligent Manufacturing Industrial Park, Lecong Town, Shunde District, Foshan City Guangdong Province, China"
+  ],
+  "source": "youdesignart.com/productinfo/8456.html",
+  "spec": {
+   "MOQ": "1 pc",
+   "Width": "36 cm",
+   "Depth": "36 cm",
+   "Height": "50 cm",
+   "Lead time": "25-35 days"
+  }
+ },
+ {
+  "id": "8460",
+  "code": "YD-8460",
+  "name": "Factory Direct Marble Top Sideboard with D",
+  "cat": "Storage",
+  "img": "33307268.jpg",
+  "gallery": [],
+  "desc": "MATERIALS Body: Brass, Wood & Marble STANDARD FINISHES Body: Polished brass, Black lacquer & Nero Marquina marble WEIGHT 130 kg | 286,60 lbs DIMENSIONS H 42 cm | 16,54'' L 230 cm | 90,55'' D 50 cm | 19,69''",
+  "paras": [
+   "MATERIALS Body: Brass, Wood & Marble STANDARD FINISHES Body: Polished brass, Black lacquer & Nero Marquina marble WEIGHT 130 kg | 286,60 lbs DIMENSIONS H 42 cm | 16,54'' L 230 cm | 90,55'' D 50 cm | 19,69''",
+   "Our top-notch woodworking and hardware factories aim to bring your design ideas to life",
+   "Living Room Furniture Dining Room Furniture Bed Room Furniture Office Furniture Art Lightings Home Decoration",
+   "WhatsApp: +8613434835596 Email： sales1@youdesignart.com Address： 6th Floor, Building A3, Zone A, Shanghua Intelligent Manufacturing Industrial Park, Lecong Town, Shunde District, Foshan City Guangdong Province, China",
+   "本网站由阿里云提供云计算及安全服务 Powered by 万网 ꁸ Top ꂅ +8613434835596 ꀥ WhatsApp"
+  ],
+  "source": "youdesignart.com/productinfo/8460.html",
+  "spec": {
+   "MOQ": "1 pc",
+   "Lead time": "25-35 days"
+  }
+ },
+ {
+  "id": "8461",
+  "code": "YD-8461",
+  "name": "Light Luxury Gold-Plated Stainless Steel S",
+  "cat": "Storage",
+  "img": "33307268.jpg",
+  "gallery": [],
+  "desc": "Wooden structure, with mirrored surface with two polished stainless steel plates, ripped by a hammered polished brass sheet. Lamp made of cast brass. Electrification is incorporated in a box fixed on the",
+  "paras": [
+   "Wooden structure, with mirrored surface with two polished stainless steel plates, ripped by a hammered polished brass sheet. Lamp made of cast brass. Electrification is incorporated in a box fixed on the back of the wooden structure.",
+   "Arts and Techniques Joinery, Foundry, Turning, Electroplating, Lacquering, Varnishing.",
+   "Gold plated brass tubes, Palisander veneer, Black lacquer.",
+   "Dimensions W 232 cm | D 45 cm | H 95 cm W 91.3 in | D 17.7 in | H 37.4 in",
+   "Customization Custom sizes and colors are available with an upcharge.",
+   "Our top-notch woodworking and hardware factories aim to bring your design ideas to life"
+  ],
+  "source": "youdesignart.com/productinfo/8461.html",
+  "spec": {
+   "MOQ": "1 pc",
+   "Width": "232 cm",
    "Depth": "45 cm",
-   "Height": "150 cm",
-   "MOQ": "1 pc",
-   "Material": "Wood / gold leaf",
-   "Doors": "2"
+   "Height": "95 cm",
+   "Lead time": "25-35 days"
   }
  },
  {
-  "id": "ST-06",
-  "cat": "Storage",
-  "name": "Blue & White Porcelain Cabinet",
-  "img": "173644790.jpg",
-  "desc": "Hand-painted porcelain panel set into a refined frame. Original motifs fired onto ceramic, one piece at a time.",
-  "spec": {
-   "Width": "95 cm",
-   "Depth": "42 cm",
-   "Height": "140 cm",
-   "MOQ": "1 pc",
-   "Material": "Porcelain / wood",
-   "Finish": "Hand painted"
-  }
- },
- {
-  "id": "ST-11",
-  "cat": "Storage",
-  "name": "Media Console",
-  "img": "173638816.jpg",
-  "desc": "Low horizontal console combining stone, lacquer and metal. Built for contemporary living rooms and suites.",
-  "spec": {
-   "Width": "220 cm",
-   "Depth": "48 cm",
-   "Height": "52 cm",
-   "MOQ": "1 pc",
-   "Material": "Stone / lacquer",
-   "Finish": "Custom"
-  }
- },
- {
-  "id": "WC-01",
-  "cat": "Storage",
+  "id": "WC01",
+  "code": "YD-W01",
   "name": "Mechanical Luxury Wine Cabinet",
+  "cat": "Storage",
   "img": "wine-mechanical-crop.jpg",
-  "desc": "A wine cabinet that turns storage into art. Carved facade, mechanical detailing and integrated lighting.",
+  "gallery": [
+   "wine-hero-clean.jpg"
+  ],
+  "desc": "A wine cabinet that turns storage into art. Carved facade, mechanical detailing and integrated lighting, built to specification.",
+  "paras": [],
+  "source": "",
   "spec": {
-   "Width": "120 cm",
-   "Depth": "55 cm",
-   "Height": "210 cm",
    "MOQ": "1 pc",
    "Capacity": "180 bottles",
-   "Finish": "Custom"
+   "Finish": "Custom",
+   "Lead time": "25-35 days"
   }
  },
  {
-  "id": "WC-02",
-  "cat": "Storage",
+  "id": "WC02",
+  "code": "YD-W02",
   "name": "Future Bloom Wine Cabinet",
+  "cat": "Storage",
   "img": "wine-future-crop.jpg",
+  "gallery": [
+   "wine-hero-clean.jpg"
+  ],
   "desc": "Minimalist expression of metal, power and light. A climate-controlled showcase for a serious collection.",
+  "paras": [],
+  "source": "",
   "spec": {
-   "Width": "140 cm",
-   "Depth": "60 cm",
-   "Height": "220 cm",
    "MOQ": "1 pc",
    "Capacity": "240 bottles",
-   "Finish": "Silver / glass"
+   "Finish": "Silver / glass",
+   "Lead time": "25-35 days"
   }
  }
 ]
