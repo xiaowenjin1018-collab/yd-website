@@ -2522,24 +2522,41 @@
 <section class="band"><div><h2>Need something not listed?</h2><p>Send us a drawing or reference image. We reproduce and customise to specification.</p></div><button data-rfq>Request a Quote</button></section>
 <script>
 (function(){
+  var grid=document.querySelector('.prod-grid');
+  var cards=Array.prototype.slice.call(grid.querySelectorAll('.pcard'));
   var links=document.querySelectorAll('.subnav a');
+  var PAGE=24, shown=PAGE, cat='All';
+  var pager=document.createElement('div');
+  pager.style.cssText='display:flex;justify-content:center;padding:40px 0 8px';
+  pager.innerHTML='<button type="button" id="loadMore" style="min-height:48px;padding:0 34px;background:var(--ink);color:#fff;border:none;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer">Load more products</button>';
+  grid.parentNode.insertBefore(pager,grid.nextSibling);
+  var btn=pager.querySelector('#loadMore');
+  function apply(){
+    var vis=cards.filter(function(c){return cat==='All'||c.getAttribute('data-cat')===cat});
+    vis.forEach(function(c,i){c.style.display=i<shown?'':'none'});
+    cards.forEach(function(c){if(cat!=='All'&&c.getAttribute('data-cat')!==cat)c.style.display='none'});
+    var left=vis.length-shown;
+    btn.style.display=left>0?'':'none';
+    btn.textContent='Load more ('+left+' left)';
+  }
   links.forEach(function(a){a.addEventListener('click',function(e){
-    e.preventDefault(); var c=this.getAttribute('data-cat');
-    links.forEach(function(x){x.classList.remove('active')}); this.classList.add('active');
-    document.querySelectorAll('.pcard').forEach(function(card){
-      card.style.display=(c==='All'||card.getAttribute('data-cat')===c)?'':'none';
-    });
+    e.preventDefault();
+    links.forEach(function(x){x.classList.remove('active')});
+    a.classList.add('active');
+    cat=a.getAttribute('data-cat'); shown=PAGE; apply();
   })});
+  btn.addEventListener('click',function(){shown+=PAGE;apply()});
+  apply();
 })();
 </script>
 <footer><div class="wrap">
   <div class="foot-grid">
-    <div><div class="foot-brand">YOU DESIGN</div><p style="color:var(--muted);font-size:12px">High-end customized furniture for international buyers. Designed in Italy, made in our own factories.</p></div>
+    <div><div class="foot-brand">YOU DESIGN</div><p style="color:var(--muted);font-size:12px">High-end customized furniture for international buyers. Made to order in our own factories.</p></div>
     <div class="foot-col"><h5>Explore</h5><a href="products.html">Products</a><a href="blog.html">Blog</a><a href="certificates.html">Certificates</a><a href="about.html">About</a><a href="contact.html">Contact</a></div>
     <div class="foot-col"><h5>Contact</h5><p>+86 134 3483 5596</p><p>WhatsApp · QQ service</p><p>sales@youdesignart.com</p></div>
     <div class="foot-col"><h5>Enquiries</h5><a href="#" data-rfq>Request a Quote</a><p>Villa · Hospitality · Residential</p></div>
   </div>
-  <div class="foot-bottom"><span>© 2026 YOU DESIGN</span><span>Italian design · Own factories · Made to order</span></div>
+  <div class="foot-bottom"><span>© 2026 YOU DESIGN</span><span>Custom made · Own factories · Made to order</span></div>
 </div></footer>
 <script src="assets/common.js"></script>
 </body></html>

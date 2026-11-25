@@ -11,15 +11,21 @@ document.addEventListener('DOMContentLoaded', function () {
   var toggle = document.querySelector('.nav-toggle');
   var nav = document.querySelector('.nav-links') || document.querySelector('.editorial-nav');
   if (toggle && nav) {
-    toggle.addEventListener('click', function () {
-      nav.classList.toggle('open');
-      toggle.classList.toggle('active');
-    });
+    function setNav(open){
+      nav.classList.toggle('open',open);
+      toggle.classList.toggle('active',open);
+      document.body.classList.toggle('nav-open',open);
+      toggle.setAttribute('aria-expanded',open?'true':'false');
+    }
+    toggle.addEventListener('click', function () { setNav(!nav.classList.contains('open')); });
     nav.querySelectorAll('a').forEach(function (a) {
-      a.addEventListener('click', function () {
-        nav.classList.remove('open');
-        toggle.classList.remove('active');
-      });
+      a.addEventListener('click', function () { setNav(false); });
+    });
+    document.addEventListener('keydown', function(e){
+      if(e.key==='Escape' && nav.classList.contains('open')) setNav(false);
+    });
+    document.addEventListener('click', function(e){
+      if(nav.classList.contains('open') && !nav.contains(e.target) && !toggle.contains(e.target)) setNav(false);
     });
   }
 
