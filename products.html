@@ -4,20 +4,30 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Products | YOU DESIGN</title>
 <link rel="stylesheet" href="assets/site.css"><link rel="stylesheet" href="assets/rfq.css"><link rel="stylesheet" href="assets/motion.css"><link rel="stylesheet" href="assets/carousel.css">
+<style>
+.cat-tools{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;padding:14px 0 6px}
+.cat-tools input,.cat-tools select{min-height:44px;padding:0 14px;font:400 14px/1.4 inherit;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:0}
+.cat-tools input{flex:1 1 260px;max-width:420px}
+.cat-tools select{min-width:190px;cursor:pointer}
+.cat-tools label{font:600 11px/1 var(--sans);letter-spacing:1.4px;text-transform:uppercase;color:var(--muted)}
+.cat-empty{display:none;padding:60px 0;text-align:center;color:var(--muted);font-size:15px}
+</style>
 </head><body>
 <header>
   <a href="index.html" class="brand">YOU DESIGN <span>Architectural Collection</span></a>
-  <nav class="nav-links"><a href="products.html">Products</a><a href="index.html#joinery">Fixed Joinery</a><a href="index.html#story">Story</a><a href="index.html#materials">Materials</a><a href="about.html">About</a><a href="blog.html">Blog</a><a href="certificates.html">Certificates</a><a href="contact.html">Contact</a></nav>
+  <nav class="nav-links"><a href="products.html">Products</a><a href="about.html">About</a><a href="blog.html">Blog</a><a href="certificates.html">Certificates</a><a href="contact.html">Contact</a></nav>
   <div class="nav-right"><button class="nav-cta" data-rfq>Request a Quote</button><button class="nav-toggle" aria-label="menu">☰</button></div>
 </header>
 <section class="page-hero"><div class="wrap">
   <div class="crumb"><a href="index.html">Home</a> / Products</div>
   <div class="kicker">Catalogue</div>
-  <h1>357 specification-ready pieces</h1>
+  <h1 id="catHeading">357 specification-ready pieces</h1>
   <p>Every piece is made to order. Dimensions, finishes and materials are configurable — send your specification for a quotation.</p>
 </div></section>
-<div class="wrap"><div class="subnav"><a href="#all" class="active" data-cat="All">All</a><a href="#seating" class="" data-cat="Seating">Seating</a><a href="#tables" class="" data-cat="Tables">Tables</a><a href="#storage" class="" data-cat="Storage">Storage</a><a href="#bedroom" class="" data-cat="Bedroom">Bedroom</a><a href="#bath" class="" data-cat="Bath">Bath</a><a href="#objects" class="" data-cat="Objects">Objects</a></div></div>
-<section class="section wrap" id="all"><div class="cat-head"><h2>Complete catalogue</h2><span>357 pieces · all made to order</span></div>
+<div class="wrap"><div class="subnav" id="catNav"><a href="#all" class="active" data-cat="All">All</a><a href="#seating" data-cat="Seating">Seating</a><a href="#tables" data-cat="Tables">Tables</a><a href="#storage" data-cat="Storage">Storage</a><a href="#bedroom" data-cat="Bedroom">Bedroom</a><a href="#bath" data-cat="Bath">Bath</a><a href="#objects" data-cat="Objects">Objects</a></div>
+<div class="cat-tools"><label for="catSearch">Search the catalogue</label><input id="catSearch" type="search" placeholder="Search by name or code, e.g. Lapiaz" autocomplete="off"><select id="catSort" aria-label="Sort products"><option value="default">Sort: Featured</option><option value="name">Sort: Name A–Z</option><option value="code">Sort: Code</option><option value="cat">Sort: Category</option></select></div></div>
+<section class="section wrap" id="all"><div class="cat-head"><h2>Complete catalogue</h2><span id="catCount">357 pieces · all made to order</span></div>
+<div class="cat-empty" id="catEmpty">No pieces match this filter. Try another category or clear the search.</div>
 <div class="prod-grid reveal-stagger">
 <article class="pcard reveal" data-cat="Objects" id="3572957">
       <div class="im"><a href="product-detail.html?id=3572957"><img src="refs/cat_173625705.jpg" alt="Angra Black" loading="lazy"></a></div>
@@ -2523,29 +2533,76 @@
 <script>
 (function(){
   var grid=document.querySelector('.prod-grid');
+  if(!grid) return;
   var cards=Array.prototype.slice.call(grid.querySelectorAll('.pcard'));
-  var links=document.querySelectorAll('.subnav a');
-  var PAGE=24, shown=PAGE, cat='All';
+  var links=Array.prototype.slice.call(document.querySelectorAll('#catNav a'));
+  var search=document.getElementById('catSearch'), sort=document.getElementById('catSort');
+  var countEl=document.getElementById('catCount'), heading=document.getElementById('catHeading'), emptyEl=document.getElementById('catEmpty');
+  var PAGE=24, shown=PAGE, cat='All', term='', order='default';
+
   var pager=document.createElement('div');
   pager.style.cssText='display:flex;justify-content:center;padding:40px 0 8px';
   pager.innerHTML='<button type="button" id="loadMore" style="min-height:48px;padding:0 34px;background:var(--ink);color:#fff;border:none;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer">Load more products</button>';
   grid.parentNode.insertBefore(pager,grid.nextSibling);
   var btn=pager.querySelector('#loadMore');
+
+  function catFromHash(){
+    var h=(location.hash||'').replace('#','').toLowerCase();
+    var hit=links.filter(function(a){return (a.getAttribute('data-cat')||'').toLowerCase()===h})[0];
+    return hit?hit.getAttribute('data-cat'):'All';
+  }
+  function writeHash(){
+    var hash=cat.toLowerCase();
+    var next=(cat==='All'?'':hash);
+    if(location.hash.replace('#','')!==next) history.replaceState(null,'',location.pathname+location.search+(next?'#'+next:''));
+  }
+  function nameOf(c){var h=c.querySelector('h4');return h?h.textContent.trim():''}
+  function codeOf(c){var s=c.querySelector('.code');return s?s.textContent.trim():''}
   function apply(){
-    var vis=cards.filter(function(c){return cat==='All'||c.getAttribute('data-cat')===cat});
-    vis.forEach(function(c,i){c.style.display=i<shown?'':'none'});
-    cards.forEach(function(c){if(cat!=='All'&&c.getAttribute('data-cat')!==cat)c.style.display='none'});
-    var left=vis.length-shown;
-    btn.style.display=left>0?'':'none';
-    btn.textContent='Load more ('+left+' left)';
+    var vis=cards.filter(function(c){
+      if(cat!=='All'&&c.getAttribute('data-cat')!==cat) return false;
+      if(term){
+        var hay=(nameOf(c)+' '+codeOf(c)+' '+(c.getAttribute('data-cat')||'')).toLowerCase();
+        if(hay.indexOf(term)<0) return false;
+      }
+      return true;
+    });
+    if(order!=='default'){
+      vis.sort(function(a,b){
+        var x,y;
+        if(order==='name'){x=nameOf(a).toLowerCase();y=nameOf(b).toLowerCase()}
+        else if(order==='code'){x=codeOf(a);y=codeOf(b)}
+        else{x=(a.getAttribute('data-cat')||'');y=(b.getAttribute('data-cat')||'')}
+        return x<y?-1:x>y?1:0;
+      });
+    }
+    cards.forEach(function(c){c.style.display='none'});
+    vis.forEach(function(c,i){if(i<shown)c.style.display=''});
+    if(emptyEl) emptyEl.style.display=vis.length?'none':'block';
+
+    var n=vis.length;
+    if(countEl) countEl.textContent=n+' piece'+(n===1?'':'s')+' · '+(cat==='All'?'all made to order':cat.toLowerCase()+' collection');
+    if(heading) heading.textContent=n+' specification-ready piece'+(n===1?'':'s')+(cat==='All'?'':(cat==='Seating'?' for seating':' in '+cat.toLowerCase()));
+    btn.style.display=vis.length>shown?'':'none';
+    btn.textContent='Load more ('+Math.max(0,vis.length-shown)+' left)';
+    links.forEach(function(a){a.classList.toggle('active',a.getAttribute('data-cat')===cat)});
+    writeHash();
   }
   links.forEach(function(a){a.addEventListener('click',function(e){
     e.preventDefault();
-    links.forEach(function(x){x.classList.remove('active')});
-    a.classList.add('active');
     cat=a.getAttribute('data-cat'); shown=PAGE; apply();
   })});
+  if(search){
+    var t=null;
+    search.addEventListener('input',function(){
+      clearTimeout(t);
+      t=setTimeout(function(){term=search.value.trim().toLowerCase();shown=PAGE;apply()},160);
+    });
+  }
+  if(sort) sort.addEventListener('change',function(){order=sort.value;shown=PAGE;apply()});
   btn.addEventListener('click',function(){shown+=PAGE;apply()});
+  window.addEventListener('hashchange',function(){var next=catFromHash();if(next!==cat){cat=next;shown=PAGE;apply()}});
+  cat=catFromHash();
   apply();
 })();
 </script>

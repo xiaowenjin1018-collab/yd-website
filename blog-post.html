@@ -7,7 +7,7 @@
 </head><body>
 <header>
   <a href="index.html" class="brand">YOU DESIGN <span>Architectural Collection</span></a>
-  <nav class="nav-links"><a href="products.html">Products</a><a href="index.html#joinery">Fixed Joinery</a><a href="index.html#story">Story</a><a href="index.html#materials">Materials</a><a href="about.html">About</a><a href="blog.html">Blog</a><a href="certificates.html">Certificates</a><a href="contact.html">Contact</a></nav>
+  <nav class="nav-links"><a href="products.html">Products</a><a href="about.html">About</a><a href="blog.html">Blog</a><a href="certificates.html">Certificates</a><a href="contact.html">Contact</a></nav>
   <div class="nav-right"><button class="nav-cta" data-rfq>Request a Quote</button><button class="nav-toggle" aria-label="menu">☰</button></div>
 </header>
 <section class="page-hero"><div class="wrap">
@@ -31,9 +31,23 @@ var A=[{"id": "a1", "title": "Why Bar Chairs Are A Must-Have for Modern Kitchens
  document.getElementById('aImg').src='refs/'+a.img;
  document.getElementById('aCap').textContent=a.cat+' / YOU DESIGN journal';
  document.getElementById('crumb').textContent=a.title.slice(0,40);
- var ps=a.body.split('\n').filter(function(x){return x.length>40});
+ var ps=a.body.split('\n').filter(function(x){return x.length>20});
  var el=document.getElementById('aBody');
- ps.forEach(function(p,i){var e=document.createElement('p');e.textContent=p;if(i===0){e.className='lead'}el.appendChild(e)});
+ ps.forEach(function(p,i){
+   // 原站正文里的短标题行没有标记，这里按长度与句式还原成小标题，避免全篇都是段落
+   var isHead=p.length<92 && !/[.!?]$/.test(p) && !/^(In |This |The |One |Whether |Wood |Bar |A )/.test(p);
+   if(isHead){var h=document.createElement('h3');h.textContent=p;el.appendChild(h);return}
+   var e=document.createElement('p');e.textContent=p;if(i===0){e.className='lead'}el.appendChild(e);
+ });
+ // 文末相关阅读
+ var rel=document.createElement('section');rel.style.cssText='margin-top:44px;padding-top:24px;border-top:1px solid var(--line)';
+ var h=document.createElement('h3');h.textContent='Keep reading';h.style.cssText='font:500 13px/1.5 var(--sans);letter-spacing:1.6px;text-transform:uppercase;color:var(--gold);margin:0 0 14px';rel.appendChild(h);
+ A.filter(function(x){return x.id!==a.id}).slice(0,3).forEach(function(x){
+   var l=document.createElement('a');l.href='blog-post.html?id='+x.id;
+   l.style.cssText='display:block;padding:10px 0;border-bottom:1px solid var(--line);text-decoration:none;color:inherit;font:14px/1.6 var(--sans)';
+   l.textContent=x.title;rel.appendChild(l);
+ });
+ el.appendChild(rel);
 })();
 </script>
 <footer><div class="wrap">

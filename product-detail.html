@@ -7,7 +7,7 @@
 </head><body>
 <header>
   <a href="index.html" class="brand">YOU DESIGN <span>Architectural Collection</span></a>
-  <nav class="nav-links"><a href="products.html">Products</a><a href="index.html#joinery">Fixed Joinery</a><a href="index.html#story">Story</a><a href="index.html#materials">Materials</a><a href="about.html">About</a><a href="blog.html">Blog</a><a href="certificates.html">Certificates</a><a href="contact.html">Contact</a></nav>
+  <nav class="nav-links"><a href="products.html">Products</a><a href="about.html">About</a><a href="blog.html">Blog</a><a href="certificates.html">Certificates</a><a href="contact.html">Contact</a></nav>
   <div class="nav-right"><button class="nav-cta" data-rfq>Request a Quote</button><button class="nav-toggle" aria-label="menu">☰</button></div>
 </header>
 <section class="page-hero"><div class="wrap">
@@ -49,9 +49,54 @@ var PRODUCTS=[{"id":"3572957","code":"YD-2957","name":"Angra Black","cat":"Objec
      th.querySelectorAll('img').forEach(function(x){x.classList.remove('active')});im.classList.add('active')};
    th.appendChild(im)});
  var story=document.getElementById('dStory'); story.innerHTML='';
- (p.paras||[]).forEach(function(txt,i){
-   var e=document.createElement('p'); e.textContent=txt; if(i===0)e.className='lead'; story.appendChild(e);
+ var paras=(p.paras||[]).filter(function(t){
+   if(!t||t.length<20) return false;
+   // 去掉原站抓取时混入的地址/品类词堆砌，不放进正文
+   if(/^WhatsApp:|^Address：/.test(t)) return false;
+   if(/Living Room Furniture Dining Room Furniture/.test(t)) return false;
+   return true;
  });
+ function module(title,text,lead){
+   var s=document.createElement('section'); s.className='dmod';
+   var h=document.createElement('h3'); h.textContent=title; s.appendChild(h);
+   var el=document.createElement('p'); el.textContent=text; if(lead)el.className='lead'; s.appendChild(el);
+   story.appendChild(s);
+ }
+ // 段落按内容特征归到 7 个模块；缺失的模块用已有数据补齐，不编造工艺细节
+ var used={};
+ module('Product features',p.desc||paras[0]||'',true); used['Product features']=1;
+ paras.forEach(function(t,i){
+   if(i===0) return; // 首段已作为 Product features
+   var title=null;
+   if(/^Dimensions|CM|IN\b|\bW \d/.test(t) && /Dimensions|CM|IN\b/.test(t)) title='Dimensions & proportions';
+   else if(/Customiz|Custom sizes|upcharge/i.test(t)) title='Customisation';
+   else if(/factory|workshop|workmanship|design ideas|top-notch/i.test(t)) title='Made in our factories';
+   else if(/upholster|lacquer|brass|mahogany|wood|metal|glass|finish|sierra/i.test(t)) title='Materials & finish';
+   if(title && !used[title]){used[title]=1;module(title,t);}
+ });
+ if(!used['Materials & finish']) module('Materials & finish','Material selection for this piece is confirmed on the material board before production. Ask for the current swatch set and finish samples with your quotation.');
+ if(!used['Customisation']) module('Customisation','Size, upholstery, finish and metalwork can be specified to your drawing. Send your specification for a written confirmation of what can be customised and how it affects lead time.');
+ if(!used['Dimensions & proportions']){
+   var dims=['Width','Depth','Height'].map(function(k){return p.spec[k]?k+' '+p.spec[k]:''}).filter(Boolean).join(' · ');
+   if(dims) module('Dimensions & proportions',dims+' — metric and imperial measurements available on request. Contact us for the full dimension drawing.');
+ }
+ // 规格与交期独立成段，方便买家截图给工程部
+ var specLine=Object.keys(p.spec).map(function(k){return k+': '+p.spec[k]}).join('  ·  ');
+ if(specLine) module('Specification & lead time',specLine+' — written specification sheet available with the quotation.');
+ // 养护：只给通用、可兑现的指引，不虚构测试结果
+ module('Care & handling','Dust with a soft dry cloth. Avoid prolonged direct sunlight and standing water. Clean spills immediately with a damp cloth. For upholstered pieces, professional cleaning is recommended. Contact us for the care sheet specific to the selected finish.');
+ // 相关产品：同品类优先，不足时从全站补齐
+ var related=PRODUCTS.filter(function(x){return x.id!==p.id&&x.cat===p.cat}).slice(0,4);
+ if(related.length<4) related=related.concat(PRODUCTS.filter(function(x){return x.id!==p.id&&x.cat!==p.cat&&related.indexOf(x)<0}).slice(0,4-related.length));
+ var rel=document.createElement('section'); rel.style.cssText='padding:48px 0 20px;border-top:1px solid var(--line)';
+ var rh=document.createElement('h3'); rh.style.cssText='font:500 13px/1.5 var(--sans);letter-spacing:1.6px;text-transform:uppercase;color:var(--gold);margin:0 0 20px'; rh.textContent='You may also specify';
+ var rg=document.createElement('div'); rg.className='related-grid';
+ related.forEach(function(x){
+   var a=document.createElement('a'); a.href='product-detail.html?id='+x.id;
+   a.innerHTML='<img src="refs/'+x.img+'" alt="'+x.name+'" loading="lazy"><h4>'+x.name+'</h4><span>'+x.cat+' · '+x.code+'</span>';
+   rg.appendChild(a);
+ });
+ rel.appendChild(rh); rel.appendChild(rg); story.appendChild(rel);
  document.querySelectorAll('[data-rfq]').forEach(function(b){b.setAttribute('data-rfq',p.name)});
 })();
 </script>
