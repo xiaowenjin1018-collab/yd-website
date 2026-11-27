@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
     m.innerHTML = '<div class="rfq-overlay"></div><div class="rfq-card">' +
       '<button class="rfq-close" aria-label="Close">×</button>' +
       '<h3>Request a Quote</h3><p class="rfq-pre" id="rfqProductPre"></p>' +
-      '<p class="rfq-sub">Send your specification. Our team replies within one business day.</p>' +
+      '<p class="rfq-sub">Send your specification — it will open in WhatsApp ready to send. Our team replies within one business day.</p>' +
       '<form class="rfq-form" id="rfqForm">' +
       '<label>Name</label><input required placeholder="Your full name">' +
       '<label>Company</label><input placeholder="Company / studio name">' +
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
       '<label>Project type</label><select><option>Villa / Residential</option><option>Hospitality / Hotel</option><option>Interior Design Project</option><option>Other</option></select>' +
       '<label>Quantity &amp; timeline</label><textarea placeholder="Quantity, sizes, materials, delivery timeline..."></textarea>' +
       '<button type="submit">Send enquiry</button></form>' +
-      '<div class="rfq-done" id="rfqDone"><div class="tick">✓</div><h4>Thank you</h4><p>Your enquiry has been noted. We will be in touch shortly.</p></div>' +
+      '<div class="rfq-done" id="rfqDone"><div class="tick">✓</div><h4>One last step</h4><p>Your message is ready in WhatsApp. Press <b>Send</b> there to deliver it to our team.</p><a class="rfq-wa-fallback" id="rfqWaFallback" href="#" target="_blank" rel="noopener" style="display:inline-block;margin-top:14px;padding:12px 22px;background:#25D366;color:#fff;text-decoration:none;border-radius:2px;font:600 13px/1 Arial,Helvetica,sans-serif;letter-spacing:1px">Open WhatsApp →</a></div>' +
       '</div>';
     document.body.appendChild(m);
   }
@@ -96,12 +96,30 @@ document.addEventListener('DOMContentLoaded', function () {
   if (overlay) overlay.addEventListener('click', closeModal);
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeModal(); });
 
-  // Fake submit (demo only)
+  // Real submit — hand the enquiry to WhatsApp with all fields pre-filled.
+  // Customer presses "Send enquiry" here, confirms in WhatsApp, and the message
+  // is delivered to our WhatsApp number. No backend / no email required.
   var form = document.getElementById('rfqForm');
   if (form) {
     form.addEventListener('submit', function (e) {
       e.preventDefault();
+      if (!form.reportValidity()) return;
+      var labels = form.querySelectorAll('label');
+      var fields = form.querySelectorAll('input, select, textarea');
+      var lines = ['Hello YOU DESIGN,', '', 'I would like to request a quotation:', ''];
+      for (var i = 0; i < fields.length; i++) {
+        var val = (fields[i].value || '').trim();
+        if (!val) continue;
+        var lab = labels[i] ? labels[i].textContent.replace('&', 'and').trim() : 'Info';
+        lines.push(lab + ': ' + val);
+      }
+      lines.push('', 'Please send options, pricing and lead time. Thank you.');
+      var text = lines.join('\n');
+      var link = 'https://wa.me/' + waNumber + '?text=' + encodeURIComponent(text);
       var done = document.getElementById('rfqDone');
+      var fallback = document.getElementById('rfqWaFallback');
+      if (fallback) fallback.href = link;
+      window.open(link, '_blank', 'noopener');
       if (done) { done.style.display = 'block'; form.style.display = 'none'; }
     });
   }
