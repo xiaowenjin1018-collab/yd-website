@@ -89,8 +89,8 @@ header{position:sticky;top:0;z-index:200;background:#fff;border-bottom:1px solid
 /* ---- Materials swatches ---- */
 .mats{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}
 .mat{border-right:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--soft)}
-.mat .sw{height:200px;overflow:hidden}
-.mat .sw img{transition:transform .5s}
+.mat .sw{height:260px;overflow:hidden}
+.mat .sw img{object-fit:contain;transition:transform .5s}
 .mat:hover .sw img{transform:scale(1.06)}
 .mat .mbody{padding:18px 20px 22px;background:var(--bg)}
 .mat .mbody h4{font-size:15px;font-weight:400;margin-bottom:5px}
@@ -151,8 +151,8 @@ a.app{color:inherit;text-decoration:none}
 /* ---- Blog teaser ---- */
 .blog-teaser{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--line);border-left:1px solid var(--line)}
 .bt{border-right:1px solid var(--line);border-bottom:1px solid var(--line);display:flex;flex-direction:column}
-.bt .btim{height:190px;overflow:hidden;background:var(--soft)}
-.bt .btim img{transition:transform .5s}
+.bt .btim{height:240px;overflow:hidden;background:var(--soft)}
+.bt .btim img{object-fit:contain;transition:transform .5s}
 .bt:hover .btim img{transform:scale(1.05)}
 .bt .btb{padding:20px 22px 24px;display:flex;flex-direction:column;flex:1}
 .bt .btm{font-size:10px;letter-spacing:1.5px;color:var(--gold);text-transform:uppercase}
@@ -224,14 +224,14 @@ footer{padding:64px 0 28px}
  .band{flex-direction:column;align-items:flex-start}.foot-grid{grid-template-columns:1fr 1fr}
  .sec-head{flex-direction:column;align-items:flex-start;gap:12px}.sec-head .aside{text-align:left}
  .story{grid-template-columns:1fr}.story-img{min-height:340px}.story-txt{padding:56px 24px}
- .mats{grid-template-columns:repeat(2,1fr)}.mat .sw{height:150px}
+ .mats{grid-template-columns:repeat(2,1fr)}.mat .sw{height:190px}
  .steps{grid-template-columns:repeat(2,1fr)}
  .jscope-full{grid-template-columns:repeat(2,1fr)}.jcard img{height:150px}
  .proof{grid-template-columns:repeat(2,1fr)}
  .joinery{grid-template-columns:1fr}.joinery-visual{min-height:340px}.joinery-body{padding:52px 24px}
  .joinery-section .sec-head{padding:56px 20px 26px}.joinery-strip{grid-template-columns:repeat(2,1fr)}.jstrip{height:160px}
  .apps{grid-template-columns:repeat(2,1fr)}.app .aph{height:200px}
- .blog-teaser{grid-template-columns:1fr}.bt .btim{height:210px}
+ .blog-teaser{grid-template-columns:1fr}.bt .btim{height:250px}
  .faq summary{padding-right:36px}.faq details p{padding-right:30px}
  .wrap{padding:0 22px}header{padding:0 22px}
 }
